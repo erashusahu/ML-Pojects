@@ -46,32 +46,32 @@ class ModelTrainer:
             }
             params={
                 "Decision Tree":{
-                    'criterion':['squared_error','friedman_mse','absolute_error','poisson'],
+                    'criterion':['squared_error','absolute_error'],
                 },
                 "Random Forest":{
-                    'n_estimators':[8,16,32,64,128,256]
+                    'n_estimators':[32,64,128]
                 },
                 "Gradient Boosting":{
-                    'learning_rate':[.1,.01,.05,.001],
-                    'subsample':[0.6,0.7,0.75,0.8,0.85,0.9],
-                    'n_estimators':[8,16,32,64,128,256]
+                    'learning_rate':[.1,.01],
+                    'subsample':[0.7,0.8],
+                    'n_estimators':[32,64]
                 },
                 "K-Neighbors Regressor":{
-                    'n_neighbors':[5,7,9,11],
-                    'weights':['uniform','distance']
+                    'n_neighbors':[5,9],
+                    'weights':['uniform']
                 },
                 "XGB Regressor":{
-                    'learning_rate':[.1,.01,.05,.001],
-                    'n_estimators':[8,16,32,64,128,256]
+                    'learning_rate':[.1,.01],
+                    'n_estimators':[32,64]
                 },
                 "CatBoost Regressor":{
-                    'depth':[6,8,10],
-                    'learning_rate':[.1,.01,.05,.001],
-                    'iterations':[30,50,100]
+                    'depth':[6,8],
+                    'learning_rate':[.1,.01],
+                    'iterations':[30,50]
                 },
                 "AdaBoost Regressor":{
-                    'learning_rate':[.1,.01,.05,.001],
-                    'n_estimators':[8,16,32,64,128,256]
+                    'learning_rate':[.1,.01],
+                    'n_estimators':[32,64]
                 }
                 
             }
